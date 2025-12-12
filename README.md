@@ -29,6 +29,13 @@ I link di riferimento dovrebber essere questi
 <https://docs.hpc.cineca.it/services/singularity.html>
 <https://cran.r-project.org/web/packages/CausalGPS/vignettes/Singularity-Image.html>
 
+CONTAINER-NAME=biomod++
+sudo apptainer build biomod++.sif biomod++.def
+apptainer shell biomod++.sif
+apptainer run biomod++.sif
+
+apptainer run --bind $WORK:/work,$CINECA_SCRATCH:/scratch biomod++.sif
+
 ## appunti per cineca-leonardo
 
 <https://cran.r-project.org/web/packages/CausalGPS/vignettes/Singularity-Image.html>
