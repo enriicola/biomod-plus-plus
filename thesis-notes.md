@@ -1,10 +1,6 @@
-# biomod++
+# thesis-notes
 
-my master of science thesis project!
-
-## notes
-
-### bash daniele PER IL CINECA
+## bash daniele PER IL CINECA
 
 '''bash
 if [ -f ~/.bash_agent ]; then
@@ -22,17 +18,36 @@ then
 fi
 '''
 
-### singularity
+## singularity
 
-per sicurezza, nei centri HPC gira Singularity (o la sua versione open Apptainer).
+<!---->
+Caro Enrico, dopo aver atteso la solita mezz'ora ci siamo arresi. Per installare terra serve GDAL, ma va installato come rott. Prima di chiedere supporto al CINECA proviamo la strada dei container.
+
+Come dicevo stamattina, per problematiche di sicurezza, nei centri HPC gira Singularity (o la sua versione open Apptainer).
+
+Per cui bisogna, sul portatile o Spartaco
+
+1. crearsi un container Singularity ed installarci sopra tutto quel che serve di R + software di simulazione
+2. portarlo su Leonardo e provare
+
 I link di riferimento dovrebber essere questi
 <https://docs.hpc.cineca.it/services/singularity.html>
+
+e
+
 <https://cran.r-project.org/web/packages/CausalGPS/vignettes/Singularity-Image.html>
+
+Se hai dubbi chiedi.
+<!---->
 
 ## appunti per cineca-leonardo
 
 <https://cran.r-project.org/web/packages/CausalGPS/vignettes/Singularity-Image.html>
 <https://docs.hpc.cineca.it/services/singularity.html>
+
+<!------------------------------------------------------->
+L'IP di Spartaco è 130.251.166.155 e la password è berardia
+username: user
 
 noi lavoriamo su E: (toshiba ext) alpine grasslands
 ensable modelling_no_parallel.R
